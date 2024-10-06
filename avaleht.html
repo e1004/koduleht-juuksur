@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juuksur Juula - Avaleht</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -23,18 +24,104 @@
 
     <!-- Avaleht -->
     <section id="avaleht">
-      <div class="intro">
-        <h2>Personaalne Lähenemine</h2>
-        <p>
-          Peame oluliseks, et iga klient leiaks selle, mis just temale sobib.
-          Juula juures nõustavad sind professionaalid.
-        </p>
+      <div class="intro-container">
+        <div class="image">
+          <img src="img/juuksur.jpg" alt="Your Image" />
+        </div>
+        <div class="intro">
+          <h2>PERSONAALNE LÄHENEMINE</h2>
+          <p>
+            Peame oluliseks, et iga klient leiaks selle, mis just temale sobib.
+            Juula juures nõustavad sind professionaalid.
+          </p>
+        </div>
+      </div>
+      <div class="button-container">
         <button>BRONEERI AEG SIIN!</button>
       </div>
     </section>
 
+    <!-- Slideshow-->
+  <section id="slideshow">
+    <div class="slideshow-container">
+      <div class="slides">
+        <div class="slide fade">
+          <img src="img/pilt1.jpg" alt="Image 1" />
+        </div>
+        <div class="slide fade">
+          <img src="img/pilt2.jpeg" alt="Image 2" />
+        </div>
+        <div class="slide fade">
+          <img src="img/pilt3.jpg" alt="Image 3" />
+        </div>
+      </div>
+
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
     <footer>
-      <p>Kontakt: e-post@kontakt.com | +372 54 3210 | Aadress</p>
+      <div class="footer-container">
+        <div class="contact-info">
+          <h2>KONTAKT</h2>
+          <p class="email">e-post@kontakt.com</p>
+          <p class="social">juuksurjuula.fb</p>
+          <p class="phone">+372 54 3210</p>
+          <p class="address">aadress</p>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50663.84090466166!2d24.736787071687473!3d58.37732423455888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692025881aa4997%3A0xd0aa0e9c1ae57625!2sTartu%2C%20Estonia!5e0!3m2!1sen!2s!4v1668911287855!5m2!1sen!2s"
+            width="200"
+            height="100"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
     </footer>
+
+    <script>
+      let slideIndex = 1; 
+      showSlides(slideIndex); 
+
+      function changeSlide(n) {
+          showSlides(slideIndex += n); 
+      }
+
+      function currentSlide(n) {
+          showSlides(slideIndex = n); 
+      }
+
+      function showSlides(n) {
+          let slides = document.getElementsByClassName("slide");
+          let dots = document.getElementsByClassName("dot");
+
+          if (n > slides.length) { slideIndex = 1; }
+          if (n < 1) { slideIndex = slides.length; }
+
+
+          for (let i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+
+
+          for (let i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          
+          slides[slideIndex - 1].style.display = "block";  
+          dots[slideIndex - 1].className += " active";
+      }
+  </script>
   </body>
 </html>
