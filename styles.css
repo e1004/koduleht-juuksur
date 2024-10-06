@@ -270,3 +270,49 @@ footer {
 .dot.active {
     background-color: #45363E; 
 }
+
+#info {
+    padding: 20px;
+}
+
+#info h2 {
+    color: #45363E;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#info h3 {
+    color: #62414B;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#info li {
+    font-size: 14px;
+    color: #62414B;
+    font-weight: 300;
+    display: flex;
+    align-items: center; 
+    padding: 5px 0;
+}
+
+.service-name {
+    flex: 0.2; 
+}
+
+.line {
+    flex: 1; 
+    height: 1px; 
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.price {
+    margin-left: 10px; 
+    white-space: nowrap; 
+}
