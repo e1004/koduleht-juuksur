@@ -1,0 +1,150 @@
+/* Yldine */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Päis */
+header {
+    background-color: #f3d4cf;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #e1b5ae;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #4b3832;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+}
+
+/* Nav */
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4b3832;
+    font-size: 14px;
+}
+
+section {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Avaleht */
+#avaleht .intro {
+    text-align: center;
+    padding: 20px;
+}
+
+#avaleht .intro h2 {
+    font-size: 22px;
+    color: #4b3832;
+    margin-bottom: 15px;
+}
+
+#avaleht .intro p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #d7a8a0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c1877b;
+}
+
+.gallery {
+    height: 200px;
+    background-color: #eaeaea;
+    margin-top: 30px;
+}
+
+/* Teenused */
+#teenused h2 {
+    font-size: 22px;
+    color: #4b3832;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#teenused .services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#teenused h3 {
+    font-size: 18px;
+    color: #4b3832;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e1b5ae;
+    padding-bottom: 5px;
+}
+
+#teenused ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+#teenused ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0e1db;
+    padding-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3d4cf;
+    color: #4b3832;
+    font-size: 14px;
+    border-top: 2px solid #e1b5ae;
+    margin-top: 30px;
+}
