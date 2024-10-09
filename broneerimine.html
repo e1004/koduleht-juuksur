@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juuksur Juula - Broneerimine</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   </head>
   <body>
     <header>
-      <div class="logo"></div>
+      <div class="logo">
+        <img src="img/hair-cut-tool.png" alt="Juuksur Juula logo" />
+      </div>
       <h1>JUUKSUR JUULA</h1>
+      <div class="search">
+        <img src="https://img.icons8.com/?size=100&id=132&format=png&color=000000" />
+      </div>
     </header>
     <div>
       <nav>
@@ -22,6 +28,50 @@
     <!-- Broneerimine -->
     <section id="broneerimine">
       <h2>Broneerimine</h2>
+      <div class="calendar">
+        <div class="calendar-header">
+          <button id="previousButton">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <div id="monthAndYear"></div>
+          <button id="nextButton">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="days">
+          <div class="day">SUN</div>
+          <div class="day">MON</div>
+          <div class="day">TUE</div>
+          <div class="day">WED</div>
+          <div class="day">THU</div>
+          <div class="day">FRI</div>
+          <div class="day">SAT</div>
+        </div>
+        <div class="dates" id="dates">
+        </div>
+      </div>
+      <script src="broneerimine.js"></script>
+      <div class="button-choose">
+        <button>VALI TEENUS <i class="fas fa-arrow-down"></i></button>
+      </div>
+      <div class="serviceTable">
+        <div class="serviceRow">
+          <div class="time">9.00</div>
+          <div class="person">Juula</div>
+          <div class="price">hind</div>
+        </div>
+        <div class="serviceRow">
+          <div class="time">12.00</div>
+          <div class="person">Luule-Mari</div>
+          <div class="price">hind</div>
+        </div>
+        <div class="serviceRow">
+          <div class="time">19.30</div>
+          <div class="person">Juula</div>
+          <div class="price">hind</div>
+        </div>
+      </div>
+      <div class="big-button">EDASI <i class="fas fa-arrow-right"></i></div>
     </section>
 
     <footer>
