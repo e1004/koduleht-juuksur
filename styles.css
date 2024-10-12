@@ -445,7 +445,7 @@ i.fas {
     color: white
 }
 
-section {
+.image-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -453,7 +453,7 @@ section {
     padding: 20px;
 }
 
-section img {
+.image-gallery img {
     width: calc(25% - 15px);
     height: auto;
     border-radius: 10px;
@@ -461,6 +461,6 @@ section img {
     transition: transform 0.3s;
 }
 
-section img:hover {
+.image-gallery img:hover {
     transform: scale(1.05);
 }
